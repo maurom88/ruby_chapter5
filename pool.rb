@@ -1,22 +1,22 @@
 def pig_latin(words)
 
     original_length = 0
-    _ = 0
+    new_length = 0
 
-    words._ do _
+    words.each do |word|
         puts "Original word: #{word}"
-        _ =+ word.original_length
+        original_length += word.length
         letters = word.chars
         first_letter = letters.shift
         new_word = "#{letters.join}#{first_letter}ay"
-        puts "Pig Latin word: #{_}"
-        _ += new_word.original_length
+        puts "Pig Latin word: #{new_word}"
+        new_length += new_word.length
     end
 
-    puts "Total original length: #{_}"
+    puts "Total original length: #{original_length}"
     puts "Total Pig Latin length: #{new_length}"
 
 end
 
-my_words = ["block", "totally", "rock"]
-pit_latin(_)
+my_words = ["blocks", "totally", "rock"]
+pig_latin(my_words)
