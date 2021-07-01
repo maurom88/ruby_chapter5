@@ -36,8 +36,3 @@ def show_discounts(prices)
 end
 
 show_discounts(prices)
-
-### Assignment: answer the following questions:
-# 1. Which version of the code do you like better - the code in the last commit (page 165) or the previous one (page 164)? Why?
-
-# 2. Is there ever a good reason to repeat yourself in code (i.e. not have DRY code)? Give an example that justifies your answer.
